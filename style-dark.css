@@ -1,0 +1,1326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=League+Spartan:wght@600&family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition :  0.2s linear;
+}
+
+a:link {
+    color: none;
+ }
+ 
+ 
+a:visited {
+     color: none; 
+    }
+
+body {
+    background-color: #111;
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition :  0.2s linear;
+
+}
+
+/*SLIDER*/
+
+label.theme {
+    background-image: url(/estilo/adb5910cc323af5c84516c44af134a80.jpg);
+    background-size: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    transform: scale(1.5);
+    justify-content:center;
+    align-items: center;
+}
+
+.fa-sun {
+    color: transparent;
+    display: none;
+  }
+
+.fa-moon {
+    color: #f1c40f;
+}
+.fa-cloud {
+    color: transparent;
+  }
+
+
+
+/*BARRA DE ROLAGEM*/
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #0047FF;
+    border-radius: 3px; 
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: #434343;
+  }
+
+/* HEADER */
+
+header {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 0 7px 7px;
+}
+
+header img.h1 {
+    display: none;
+}
+
+header img.h1-dark{
+    display: flex;
+    border-radius: 5px;
+    border: #434343 3px solid;
+    
+}
+
+header .navegacao-primaria {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight:bold;
+    text-shadow: 0 0 10px #999;
+}
+
+header .navegacao-primaria li a {
+    color: #f7f7f7;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+}
+
+header  i{
+    color: transparent;
+}
+
+header .navegacao-primaria li a::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .7s;
+}
+
+header .navegacao-primaria li a:hover::after {
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #0047FF;
+}
+
+/* DOWLOAD CV SECAO */
+
+.section-div {
+    animation: inicializar .7s forwards;
+    background-color: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.section-div div {
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 30px;
+}
+
+.section-div div h2 {
+    font-family: 'League Spartan';
+    font-weight: bold;
+    font-size: 2.6rem;
+    color: #0047FF;
+}
+
+.section-div div h1{
+    color: #0047FF;
+    font-family: 'League Spartan';
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+.section-div div h2{
+    color: #702DFA;
+}
+
+.section-div div p {
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #fff;
+}
+
+.section-div div p span{
+    font-weight: bold;
+}
+
+.section-div div a.curriculo {
+    justify-self: start;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: 2px solid #702DFA;
+    font-family: 'League Spartan';
+}
+
+.section-div ul.social {
+  color: #702DFA;
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+  padding: 5px;
+  margin: -50px 0 0 30px;
+}
+
+.section-div ul.social a {
+    color:#0047FF;
+}
+
+.section-div img {
+    max-width: 50%;
+    border-radius: 10px;
+    border: #333 4px solid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.digitando1::after {
+    content: '|' ;
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca1 4s forwards;
+    display:inline-block;
+}
+
+.digitando2::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .9s infinite;
+}
+
+@keyframes pisca {
+    from {
+        opacity: 1;
+
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes pisca1 {
+    from{
+        opacity: 1;
+    }
+    to{
+       opacity: 0;
+    }
+    
+} 
+
+
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/* SEÇÃO PRINCIPAL SOBRE MIM */
+
+
+main {
+    background-color: #222;
+    color: white;
+}
+
+main .sobre {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.sobre_titulo {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+}
+
+.sobre_titulo h1 {
+    font-size: 2.5rem;
+    color: #0047FF;
+    margin-bottom: 15px;
+    font-family: 'League Spartan';
+}
+
+.sobre_titulo p {
+    color: #777;
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.sobre_titulo div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sobre_titulo span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #702DFA;
+}
+
+.sobre img {
+    animation: ladoSecao .5s ease-in-out forwards;
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius: 4px;
+    border: #555 4px solid;
+    filter: blur(0);
+}
+
+.sobre img:hover {
+    transition: .5s ease-in;
+    filter: blur(1px);
+}
+
+.sobre_conteudo {
+    animation: sobeSecao .6s ease-in-out forwards;
+    grid-column: 2/-1;
+    display: grid;
+    color: #000000;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre_texto {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sobre_texto h1 {
+    font-size: 2.3rem;
+    color: #fff;
+    grid-column: 1/-1;
+    font-family: 'League Spartan';
+}
+
+.sobre_texto h1::after {
+    background-color: #702DFA;
+    height: 6px;
+    width: 60px;
+    margin: 20px 0;
+    content: '';
+    display: block;
+    border-radius: 5px;
+}
+
+.sobre_texto p {
+    color: #dcdcdc;
+    font-size: 1.3rem;
+    font-family: 'Poppins';
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+.sobre_texto p span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.sobre_info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
+    align-items: center;
+}
+
+.sobre_info i {
+    color: #0047FF;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+}
+
+.sobre_info p {
+    color: #cacaca;
+    font-family: 'Poppins';
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+@keyframes sobeSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ladoSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+/* SEÇÃO SERVICES */
+
+.services {
+    margin-top: -30px;
+    padding: 60px;
+    background-color: #282828;
+}
+
+
+.my_services {
+    padding: 60px;
+    color: white;
+}
+
+.my_services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_services ul li {
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 300px;
+    align-content: center;
+    height: 300px;
+    background-color: #444;
+}
+
+.my_services ul li img {
+    margin-left: 110px;
+}
+
+
+.my_services ul li h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.my_services ul li p {
+    color: #cacaca;
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+}
+
+.my_services li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my_services li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my_services li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+}
+
+.my_services li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+}
+
+
+/* SOBRE MINHAS EXPERIÊNCIAS */
+
+.my_resume {
+    color: #f7f7f7;
+}
+
+.resume_gerenico {
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+.resume_gerenico h2 {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #0047FF;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 1px;
+}
+
+.resume_gerenico h2 i {
+    margin-right: 10px;
+}
+
+.experience {
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+
+.experience_content ul {
+    color: #702DFA;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.resume_gerenico .experience_content div {
+    animation: ladoSecao .5s ease-in-out forwards;
+    display: none;
+    background-color: #444;
+    padding: 40px;
+}
+
+
+.resume_gerenico .experience_content div::before {
+    content: '';
+    display: inline-block;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #444;
+    top: -20px;
+    left: 30px;
+    position: absolute;
+}
+
+.resume_gerenico .experience_content div span {
+    color: #702DFA;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.resume_gerenico .experience_content div h3 {
+    color: #f7f7f7;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.resume_gerenico .experience_content div p {
+    color: #cacaca;
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+}
+
+
+.resume_gerenico .experience_content div.ativo {
+    display: block;
+    padding: 40px;
+}
+
+.experience_content ul li.ativo {
+    color: #3e3d3d;
+}
+
+
+
+/* PROJECTS */
+
+.projects {
+    padding: 30px;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    background-color: #282828;
+}
+
+.projects ul {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.project_models ul li {
+    cursor: pointer;
+    font-family: 'Poppins';
+    background-color: #555;
+    border: 1px solid #777;
+    color: #cacaca;
+    padding: 6px 20px;
+}
+
+.project_models ul li.ativo {
+    background-color: #702DFA;
+    color: #151515;
+    font-weight: bold;
+}
+
+
+.projects_armazenamento ul {
+    display: grid;
+    margin-top: 60px;
+    gap: 100px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.projects_armazenamento h3{
+    font-family: 'League Spartan';
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects_armazenamento li p {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    color: transparent;
+    text-align:center;
+}
+
+.projects_armazenamento li:hover p{
+    color: #777;
+    transition: 1s linear;
+    
+    
+}
+
+.projects_armazenamento ul li {
+    display: none;
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+.projects_armazenamento ul li.ativo {
+    display: block;
+    animation: animationButton 2s ease-in-out forwards;
+}
+
+.projects_armazenamento ul li img {
+    cursor: pointer;
+    max-width: 400px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.projects a.scroll-link {
+    z-index: 9999;
+    position:fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 15px ;
+    border-radius: 20%;
+    font-size: 1.6rem;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+
+@keyframes animationButton {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -90px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0px, 0);
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000;
+    padding: 30px;
+}
+
+.footer_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.footer_sociais li {
+    border-radius: 50%;
+    background-color: #333;
+    border: 1px solid #555;
+}
+
+.footer_sociais li i {
+    padding: 30px;
+    font-size: 1.5rem;
+    color: #702DFA;
+}
+
+.footer_sociais li:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    background-color: #555;
+}
+
+.footer_sociais::before {
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    height: 5px;
+    width: 200px;
+    background-color: #702DFA;
+}
+
+footer .footer_comercial {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 90px 0;
+    font-family: 'Poppins';
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px) {
+
+    * {
+        max-width: 1024px;
+        height: auto;
+        
+    }
+
+    header {
+        max-width: 1024px;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .sobre_conteudo p {
+        font-size: 16px;
+    }
+
+    .sobre_info p {
+        font-size: 0.79rem;
+    }
+
+    .projects_armazenamento ul {
+        max-width: 1024px;
+        height: auto;
+    }
+
+    .projects_armazenamento li h3 {
+        font-size:30px;
+    }
+
+    .projects_armazenamento li p {
+        font-size: 16px;
+    }
+
+    .projects_armazenamento ul li img {
+        max-width: 350px;
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    * {
+        max-width: 768px;
+        height: auto;
+    }
+
+    header {
+        max-width: 768px;
+        height: auto;
+    }
+
+    header img {
+        max-width: 300px;
+    }
+
+    header .navegacao-primaria {
+        display: none; /* Ocultar a navegação primária */
+    }
+
+    header i.fa-solid.fa-bars::before {
+        display:block;
+        color: #f7f7f7;
+        font-size: 2.6rem;
+        margin: 0 0 0px 250px;
+        transition: .2s linear;
+    }
+
+    header .navegacao-primaria.ativado {
+        background: linear-gradient(#222222 , rgba(68, 68, 68, 0.73));
+        position: absolute;
+        display: grid;
+        color: #f7f7f7;
+        z-index: 2;
+        padding: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 4px;
+        animation: sobeSecao .8s ease-in-out forwards;
+        margin-top: 55px;
+    }
+
+    label.theme {
+        margin: 0 0 0 0 ;
+        padding: 10px;
+        max-width: 40px;
+        height: 40px;
+    }
+
+    .section-div div h1, .section-div div h2 {
+        font-size: 2.3rem;
+    }
+
+    .section-div img {
+        max-width: 220px;
+        height: auto;
+    }
+
+    .sobre_titulo h1 {
+        font-size: 2.1rem;
+    }
+
+    .sobre_titulo p {
+        font-size: 1.2rem;
+    }
+
+    .sobre_conteudo h1 {
+        font-size: 1.76rem;
+    }
+
+    article#about.sobre {
+        display: block;
+    }
+
+    article#about.sobre img {
+        max-width: 300px;
+        height: auto;
+        margin: 10px 0 20px 0;
+    }
+
+    .projects_armazenamento ul {
+        max-width: 768px;
+        height: auto;
+    }
+
+    .projects_armazenamento ul li img {
+        max-width: 260px;
+        height: auto;
+        margin:0 0 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 425.60px) {
+
+    * {
+        max-width: 425px;
+        height: auto;
+    }
+
+    header {
+        max-width: 425px;
+        height: auto;
+    }
+
+    header img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    header i.fa-solid.fa-bars::before {
+        display:block;
+        color: #f7f7f7;
+        font-size: 2.6rem;
+        margin: 0 0 0 0;
+        transition: .2s linear;
+    }
+
+    header .navegacao-primaria.ativado {
+        background: linear-gradient(#222222 , rgba(68, 68, 68, 0.73));
+        position: absolute;
+        display: grid;
+        color: #f7f7f7;
+        z-index: 2;
+        padding: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 3px;
+        animation: sobeSecao .8s ease-in-out forwards;
+        margin-top: 62px;
+    }
+
+    label.theme {
+        margin: 0 0 0 0 ;
+        padding: 10px;
+        max-width: 40px;
+        height: 40px;
+        transform: scale(1.3);
+    }
+
+    .section-div div h1, .section-div div h2 {
+        font-size: 2rem;
+        
+    }
+
+    .section-div {
+        display: block;
+        margin: 0 0 0 0;
+        padding: 10px 60px 20px 60px;
+    }
+
+    .section-div div {
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    .section-div a.curriculo {
+        margin: 0 0 0 65px;
+    }
+
+    .section-div img {
+        margin: 0 0 0 38px;
+    }
+
+    .section-div ul.social {
+        gap: 20px;
+        font-size: 2rem;
+        padding: 5px;
+        margin: 0 0 0 100px;
+    }
+
+    .sobre_titulo h1 {
+        font-size: 2rem;
+    }
+
+    .sobre_conteudo{
+        display: block;
+    }
+
+    .sobre_titulo p {
+        font-size: 1.1rem;
+    }
+
+    .sobre img {
+        width: 250px ;
+        height: auto;
+    }
+
+    .sobre_texto h1 {
+        font-size: 1.56rem;
+    }
+
+    .sobre_texto p {
+        font-size: 1.1rem;
+    }
+
+    .sobre_info i {
+        padding: 10px;
+    }
+
+    .sobre_info {
+        display: block;
+    }
+
+    .my_services {
+        
+        margin: 0 0 0 0;
+    }
+
+    .my_services ul {
+        display: grid;
+        gap: 20px;
+        margin: 0 0 0 0;
+    }
+
+    .my_services ul p {
+        font-size: 0.9rem;
+    }
+
+    .my_services ul li {
+        cursor: pointer;
+        border-radius: 6px;
+        position: relative;
+        padding: 10px;
+        display: block;
+        gap: 30px;
+        text-align: center;
+        width: 300px;
+        align-content: center;
+        height: 300px;
+        background-color:#444;
+    }
+
+    .my_services ul li img {
+        margin: 0 0 0 0;
+        width: 50px;
+    }
+
+    .projects_armazenamento ul {
+        grid-template-columns: 1fr;
+        max-width: 425px;
+        height: auto;
+    }
+
+    .projects_armazenamento ul li img {
+        max-width: 350px;
+        height: auto;
+        margin:0 0 0 3.5px;
+    }
+
+    .projects_armazenamento li p {
+        color: #888;
+    }
+
+    .projects a.scroll-link {
+        right: 4px;
+    }
+
+    footer .footer_comercial{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:375.20px) {
+    * {
+        max-width: 375px;
+        height: auto;
+    }
+
+    header img {
+        max-width: 220px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    header i.fa-solid.fa-bars::before {
+        display:block;
+        color: #fff;
+        font-size: 2.5rem;
+        margin: 0 20px 0 0;
+        transition: .2s linear;
+    }
+
+    header .navegacao-primaria.ativado {
+        background: linear-gradient(#222222 , rgba(68, 68, 68, 0.73));
+        position: absolute;
+        display: grid;
+        color: #f7f7f7;
+        z-index: 2;
+        padding: 25px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 2px;
+        animation: sobeSecao .8s ease-in-out forwards;
+        margin-top: 62px;
+    }
+
+    label.theme {
+        margin: 0 10px 0 0 ;
+        padding: 10px;
+        max-width: 40px;
+        height: 40px;
+        transform: scale(1.2);
+    }
+
+    .section-div a.curriculo {
+        margin: 0 0 0 40px;
+    }
+
+    .section-div img {
+        margin:0 0 0 13px ;
+    }
+
+    .section-div ul.social {
+        margin: 0 0 0 80px;
+    }
+
+    .sobre_titulo p {
+        font-size: 1.1rem;
+    }
+
+    .sobre img {
+        width: 230px;
+    }
+
+    .sobre_texto h1 {
+        font-size: 1.32rem;
+        width: 300px;
+        height: auto;
+    }
+
+    .sobre_texto p {
+        font-size: 1rem;
+    }
+
+    .sobre_info p {
+      font-size: 0.74rem;
+    }
+
+    .projects_armazenamento img {
+        width: 320px;
+        height: auto;
+    }
+
+    footer .footer_sociais {
+        width: 320px;
+    }
+
+    footer .footer_comercial {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    * {
+        max-width: 320px;
+        height: auto;
+    }
+
+    header img {
+        max-width: 180px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    header i.fa-solid.fa-bars::before {
+        display:block;
+        color:#fff;
+        font-size: 2.4rem;
+        margin: 0 20px 0 0;
+        transition: .2s linear;
+    }
+
+    header .navegacao-primaria.ativado {
+        background: linear-gradient(#222222 , rgba(68, 68, 68, 0.73));
+        position: absolute;
+        display: grid;
+        color: #f7f7f7;
+        z-index: 2;
+        padding: 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 4px;
+        animation: sobeSecao .8s ease-in-out forwards;
+        margin-top: 54px;
+    }
+
+    label.theme {
+        margin: 0 10px 0 0 ;
+        padding: 10px;
+        max-width: 40px;
+        height: 40px;
+        transform: scale(1.1);
+    }
+
+    .section-div a.curriculo {
+        margin: 0 0 0 15px;
+    }
+
+    .section-div div h1, .section-div div h2 {
+        font-size: 1.7rem;
+    }
+
+    .section-div div p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .section-div img {
+        margin:0 0 0 0 ;
+        width: 189px;
+    }
+
+    .section-div ul.social {
+        margin: 0 0 0 50px;
+    }
+
+    .sobre_titulo h1 {
+        font-size: 1.7rem;
+    }
+
+    .sobre_titulo p {
+        font-size: 1rem;
+    }
+
+    .sobre img {
+        width: 220px;
+        height: auto;
+    }
+
+    .sobre_conteudo{
+        width: 200px;
+        height: auto;
+
+    }
+
+    .sobre_texto h1 {
+        font-size: 1.2rem;
+        width: 270px;
+        height: auto;
+    }
+
+    .sobre_texto p {
+        font-size: 0.8rem;
+    }
+
+    .sobre_info p {
+      font-size: 0.8rem;
+    }
+
+    .sobre_info i {
+        font-size: 1.2rem;
+    }
+
+
+    .project_models ul li {
+       padding: 3px 10px;
+    }
+
+    .projects_armazenamento ul li h3 {
+        font-size: 1.5rem;
+    }
+
+    .projects_armazenamento ul li p {
+        font-size: 1rem;
+    }
+
+    .projects_armazenamento ul li img {
+        width: 220px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    h2.experience {
+        font-size: 1.2rem;
+    }
+
+
+    ul.footer_sociais {
+        position: relative;
+        margin: 0 0 0 25px;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .footer_sociais li i {
+        padding:15px;
+        font-size: 1.3rem;
+        color: #702DFA;
+        width: 50px;
+        margin: 0 0 0 0;
+    }
+
+    footer .footer_comercial {
+        font-size: 1rem;
+    }
+
+    a.scroll-link i {
+        font-size: 1.5rem;
+    }
+}
