@@ -912,6 +912,178 @@ footer .footer_comercial {
 
 }
 
+@media screen and (max-width: 430.40px) {
+
+    * {
+        max-width: 430px;
+        height: auto;
+    }
+
+    header {
+        max-width: 430px;
+        height: auto;
+    }
+
+    header img {
+        max-width: 280px;
+        height: auto;
+    }
+
+    header i.fa-solid.fa-bars::before {
+        display:flex;
+        color:#f7f7f7;
+        font-size: 2.5rem;
+        margin: 0 0 0 0;
+        transition: .2s linear;
+    }
+
+    header .navegacao-primaria.ativado {
+        background: linear-gradient(#222222 , rgba(68, 68, 68, 0.73));
+        position: absolute;
+        display: grid;
+        color: #f7f7f7;
+        z-index: 2;
+        padding: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border-radius: 0 0 4px 4px;
+        right: 1px;
+        animation: sobeSecao .8s ease-in-out forwards;
+        margin-top: 66px;
+    }
+
+    label.theme {
+        margin: 0 0 0 0 ;
+        padding: 10px;
+        max-width: 40px;
+        height: 40px;
+        transform: scale(1.3);
+    }
+
+    .section-div div h1, .section-div div h2 {
+        font-size: 2rem;
+        
+    }
+
+    .section-div {
+        display: block;
+        margin: 0 0 0 0;
+        padding: 10px 60px 20px 60px;
+    }
+
+    .section-div div {
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+
+    .section-div a.curriculo {
+        margin: 0 0 0 65px;
+    }
+
+    .section-div img {
+        margin: 0 0 0 38px;
+    }
+
+    .section-div ul.social {
+        gap: 20px;
+        font-size: 2rem;
+        padding: 5px;
+        margin: 0 0 0 100px;
+    }
+
+    .sobre_titulo h1 {
+        font-size: 2rem;
+    }
+
+    .sobre_conteudo{
+        display: block;
+    }
+
+    .sobre_titulo p {
+        font-size: 1.1rem;
+    }
+
+    .sobre img {
+        width: 250px ;
+        height: auto;
+    }
+
+    .sobre_texto h1 {
+        font-size: 1.56rem;
+    }
+
+    .sobre_texto p {
+        font-size: 1.1rem;
+    }
+
+    .sobre_info i {
+        padding: 10px;
+    }
+
+    .sobre_info {
+        display: block;
+    }
+
+    .my_services {
+        
+        margin: 0 0 0 0;
+    }
+
+    .my_services ul {
+        display: grid;
+        gap: 20px;
+        margin: 0 0 0 0;
+    }
+
+    .my_services ul p {
+        font-size: 0.9rem;
+    }
+
+    .my_services ul li {
+        cursor: pointer;
+        border-radius: 6px;
+        position: relative;
+        padding: 10px;
+        display: block;
+        gap: 30px;
+        text-align: center;
+        width: 300px;
+        align-content: center;
+        height: 300px;
+        background-color: #444;
+    }
+
+    .my_services ul li img {
+        margin: 0 0 0 0;
+        width: 50px;
+    }
+
+    .projects_armazenamento ul {
+        grid-template-columns: 1fr;
+        max-width: 425px;
+        height: auto;
+    }
+
+    .projects_armazenamento ul li img {
+        max-width: 350px;
+        height: auto;
+        margin:0 0 0 3.5px;
+    }
+
+    .projects_armazenamento li p {
+        color: #fff;
+    }
+
+    .projects a.scroll-link {
+        right: 4px;
+    }
+
+    footer .footer_comercial{
+        font-size: 1rem;
+    }
+
+}
+
 @media screen and (max-width: 425.60px) {
 
     * {
