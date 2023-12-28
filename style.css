@@ -233,6 +233,11 @@ header .navegacao-primaria li a:hover::after {
 
 .section-div img {
     max-width: 50%;
+    border-radius: 10px;
+    border: #cacaca 4px solid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
 }
 
 .digitando1::after {
