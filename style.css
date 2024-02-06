@@ -238,6 +238,30 @@ header .navegacao-primaria li a:hover::after {
     justify-content: center;
     align-items: center;
     margin-left: 100px;
+    transform: .2s ease-in ;
+}
+
+.section-div img:hover{
+    transform: scale(1.04);
+}
+
+.overlay {
+    position: absolute;
+    top:1px; /* Distância do balão de fala em relação à imagem */
+    left: 47.7%;
+    transform: translateX(-50%);
+    background-color: #cacacaa9;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    font-size: 17px;
+    font-family: 'Poppins';
+  }
+  
+.img-container:hover .overlay {
+    opacity: 1;
+    transition: .3s ease-in-out;
 }
 
 .digitando1::after {
@@ -348,7 +372,9 @@ main .sobre {
     animation: ladoSecao .5s ease-in-out forwards;
     cursor: pointer;
     grid-row: 2;
-    max-width: 100%;
+    max-width: 85%;
+    border-radius: 10px;
+    border: 5px solid #cacaca;
     filter: blur(0);
 }
 
@@ -685,15 +711,16 @@ main .sobre {
     cursor: pointer;
     font-family: 'Poppins';
     background-color: #cacaca;
-    border: 1px solid white;
+    border: 2px solid white;
     color: #333;
     padding: 6px 20px;
-    
+    border-radius: 10px;
 }
 
 .project_models ul li.ativo {
     background-color: #702DFA;
     color: #151515;
+    border: 3px solid #000;
     font-weight: bold;
 }
 
@@ -802,7 +829,7 @@ footer {
 .footer_sociais li {
     border-radius: 50%;
     background-color: #dcdcdc;
-    border: 1px solid white;
+    border: 4px solid white;
 }
 
 .footer_sociais li i {
@@ -821,8 +848,8 @@ footer {
     position: absolute;
     content: '';
     bottom: -30px;
-    height: 5px;
-    width: 200px;
+    height: 7px;
+    width: 250px;
     background-color: #702DFA;
 }
 
