@@ -214,6 +214,25 @@ header .navegacao-primaria li a:hover::after {
     margin-left: 100px;
 }
 
+.overlay {
+    position: absolute;
+    top:1px; /* Distância do balão de fala em relação à imagem */
+    left: 47.7%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    font-size: 17px;
+    font-family: 'Poppins';
+  }
+  
+.img-container:hover .overlay {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
 .digitando1::after {
     content: '|' ;
     margin-left: 5px;
@@ -322,7 +341,8 @@ main .sobre {
     animation: ladoSecao .5s ease-in-out forwards;
     cursor: pointer;
     grid-row: 2;
-    max-width: 100%;
+    max-width: 90%;
+    border: 5px solid #333;
     filter: blur(0);
 }
 
@@ -554,7 +574,7 @@ main .sobre {
 
 
 .experience_content ul {
-    color: #702DFA;
+    color: #0047FF;
     gap: 10px;
     cursor: pointer;
     margin-top: 20px;
@@ -632,14 +652,15 @@ main .sobre {
     cursor: pointer;
     font-family: 'Poppins';
     background-color: #555;
-    border: 1px solid #777;
+    border: 2px solid #777;
     color: #cacaca;
     padding: 6px 20px;
 }
 
 .project_models ul li.ativo {
-    background-color: #702DFA;
+    background-color: #0047FF;
     color: #151515;
+    border: 3px solid #111;
     font-weight: bold;
 }
 
@@ -740,28 +761,28 @@ footer {
 .footer_sociais li {
     border-radius: 50%;
     background-color: #333;
-    border: 1px solid #555;
+    border: 3px solid #777;
 }
 
 .footer_sociais li i {
     padding: 30px;
     font-size: 1.5rem;
-    color: #702DFA;
+    color: #0047FF;
 }
 
 .footer_sociais li:hover {
     transition: .3s ease-in-out;
     cursor: pointer;
-    background-color: #555;
+    background-color: #777;
 }
 
 .footer_sociais::before {
     position: absolute;
     content: '';
     bottom: -30px;
-    height: 5px;
-    width: 200px;
-    background-color: #702DFA;
+    height: 7px;
+    width: 250px;
+    background-color: #0047FF;
 }
 
 footer .footer_comercial {
