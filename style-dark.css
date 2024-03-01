@@ -728,6 +728,23 @@ main .sobre {
     border: 3px solid #fff;
 }
 
+.projects a.scroll-link {
+    transition: transform .8s ease;
+}
+
+a.scroll-link i:hover{
+    transform: translateY(-10px);
+    animation: moveUpDown .3s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
 
 @keyframes animationButton {
     0% {
