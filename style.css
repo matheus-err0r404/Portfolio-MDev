@@ -100,7 +100,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: #cacaca;
+    background-color: #d6d6d6;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ header {
 header img.h1{
     display: flex;
     border-radius: 5px;
-    border: #bdb9cf 3px solid;
+    border: #999 3px solid;
     
 }
 
@@ -129,12 +129,12 @@ header .navegacao-primaria {
     align-items: center;
     font-family: 'Poppins';
     font-weight:bold;
-    text-shadow: 0 0 10px #85a8ff;
+    text-shadow: 0 0 10px #55648c;
     margin-top: 20px;
 }
 
 header .navegacao-primaria li a {
-    color: #0047FF;
+    color: #555;
     width: 0px;
     height: 0px;
     font-size: 1.3rem;
@@ -216,6 +216,10 @@ header .navegacao-primaria li a:hover::after {
     border-radius: 5px;
     border: 2px solid #702DFA;
     font-family: 'League Spartan';
+}
+
+.section-div div a.curriculo:hover{
+    background-color: #c4c4c4;
 }
 
 .section-div ul.social {
@@ -319,7 +323,7 @@ header .navegacao-primaria li a:hover::after {
 
 
 main {
-    background-color: #dcdcdc;
+    background-color: #d6d6d6;
     color: white;
 }
 
@@ -482,7 +486,7 @@ main .sobre {
 .services {
     margin-top: -30px;
     padding: 60px;
-    background-color: #cecece;
+    background-color: #e2e2e2;
 }
 
 
@@ -510,7 +514,7 @@ main .sobre {
     max-width: 300px;
     align-content: center;
     height: 300px;
-    background-color: #dcdcdc;
+    background-color: #cacaca;
 }
 
 .my_services ul li img {
@@ -622,7 +626,7 @@ main .sobre {
 .resume_gerenico .experience_content div {
     animation: ladoSecao .5s ease-in-out forwards;
     display: none;
-    background-color: #dcdcdc;
+    background-color: #d6d6d6;
     padding: 40px;
 }
 
@@ -663,7 +667,7 @@ main .sobre {
 }
 
 .experience_content ul li.ativo {
-    color: #3e3d3d;
+    color: #939393;
 }
 
 @keyframes square-bounce {
@@ -717,10 +721,14 @@ main .sobre {
     border-radius: 10px;
 }
 
+.project_models ul li:hover{
+    background-color: #bababa;
+}
+
 .project_models ul li.ativo {
     background-color: #702DFA;
     color: #151515;
-    border: 3px solid #000;
+    border: 3px solid #585858;
     font-weight: bold;
 }
 
@@ -791,10 +799,10 @@ main .sobre {
     background-color: transparent;
     text-decoration: none;
     padding: 15px ;
-    border-radius: 20%;
+    border-radius: 100px;
     font-size: 1.6rem;
     color: #000;
-    border: 3px solid #000;
+    border: 4px solid #000000c8;
 }
 
 .projects a.scroll-link {
@@ -804,6 +812,10 @@ main .sobre {
 a.scroll-link i:hover{
     transform: translateY(-10px);
     animation: moveUpDown .3s infinite alternate;
+}
+
+.projects a.scroll-link:hover{
+    background-color: #c4c4c4;
 }
 
 @keyframes moveUpDown {
