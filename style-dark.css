@@ -192,6 +192,10 @@ header .navegacao-primaria li a:hover::after {
     font-family: 'League Spartan';
 }
 
+.section-div div a.curriculo:hover{
+    background-color: #1d1d1d;
+}
+
 .section-div ul.social {
   color: #702DFA;
   display: flex;
@@ -657,6 +661,10 @@ main .sobre {
     padding: 6px 20px;
 }
 
+.project_models ul li:hover{
+    background-color: #1d1d1d;
+}
+
 .project_models ul li.ativo {
     background-color: #0047FF;
     color: #151515;
@@ -722,29 +730,16 @@ main .sobre {
     background-color: transparent;
     text-decoration: none;
     padding: 15px ;
-    border-radius: 20%;
+    border-radius: 100px;
     font-size: 1.6rem;
     color: #fff;
-    border: 3px solid #fff;
+    border: 4px solid #ffffffae;
 }
 
-.projects a.scroll-link {
-    transition: transform .8s ease;
+.projects a.scroll-link:hover{
+    background-color: #1d1d1db7;
 }
 
-a.scroll-link i:hover{
-    transform: translateY(-10px);
-    animation: moveUpDown .3s infinite alternate;
-}
-
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
 
 @keyframes animationButton {
     0% {
@@ -1111,8 +1106,23 @@ footer .footer_comercial {
     }
 
     .projects a.scroll-link {
-        right: 4px;
+        transition: transform .8s ease;
     }
+    
+    a.scroll-link i:hover{
+        transform: translateY(-10px);
+        animation: moveUpDown .3s infinite alternate;
+    }
+    
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+    
 
     footer .footer_comercial{
         font-size: 1rem;
