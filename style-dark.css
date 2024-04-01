@@ -105,7 +105,6 @@ header .navegacao-primaria {
     align-items: center;
     font-family: 'Poppins';
     font-weight:bold;
-    text-shadow: 0 0 10px #999;
 }
 
 header .navegacao-primaria li a {
