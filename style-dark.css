@@ -337,11 +337,12 @@ main .sobre {
 .sobre_titulo p::after {
     background-color: #702DFA;
     height: 6px;
-    width: 60px;
+    width: 100px;
     margin: 20px 0;
     content: '';
     display: block;
     border-radius: 5px;
+    justfy-content: center;
 }
 
 .sobre img {
