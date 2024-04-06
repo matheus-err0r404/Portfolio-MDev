@@ -65,17 +65,17 @@ label.theme {
 /*BARRA DE ROLAGEM*/
 
 ::-webkit-scrollbar {
-    width: 10px; 
-  }
+    width: 10px;
+}
   
 ::-webkit-scrollbar-thumb {
     background-color: #0047FF;
-    border-radius: 3px; 
-  }
+    border-radius: 5px;
+}
   
 ::-webkit-scrollbar-track {
-    background-color: #434343;
-  }
+    background-color: #222;
+}
 
 /* HEADER */
 
@@ -337,12 +337,13 @@ main .sobre {
 .sobre_titulo p::after {
     background-color: #702DFA;
     height: 6px;
-    width: 100px;
-    margin: 20px 0;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
     content: '';
     display: block;
     border-radius: 5px;
-    justfy-content: center;
+    position: relative;
 }
 
 .sobre img {
@@ -791,7 +792,7 @@ footer {
     cursor: pointer;
     background-color: #777;
 }
-
+/*
 .footer_sociais::before {
     position: absolute;
     content: '';
@@ -799,7 +800,7 @@ footer {
     height: 7px;
     width: 250px;
     background-color: #0047FF;
-}
+}*/
 
 footer .footer_comercial {
     text-align: center;
