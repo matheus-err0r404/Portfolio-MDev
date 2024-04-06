@@ -604,7 +604,7 @@ main .sobre {
     content: '';
     display: inline-block;
     border-right: 30px solid transparent;
-    border-bottom: 30px solid #444;
+    border-bottom: 30px solid #282828;
     top: -20px;
     left: 30px;
     position: absolute;
