@@ -635,6 +635,10 @@ main .sobre {
     padding: 40px;
 }
 
+.resume_gerenico .experience_content div.ativo::before{
+    color:#282828;
+}
+
 .experience_content ul li.ativo {
     color: #3e3d3d;
 }
