@@ -90,7 +90,7 @@ body {
   
 ::-webkit-scrollbar-thumb {
     background-color: #702DFA;
-    border-radius: 3px; 
+    border-radius: 5px; 
   }
   
 ::-webkit-scrollbar-track {
@@ -363,12 +363,18 @@ main .sobre {
     justify-content: center;
 }
 
-.sobre_titulo span {
-    display: block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
+/*barra teste*/
+
+.sobre_titulo p::after {
     background-color: #702DFA;
+    height: 6px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    content: '';
+    display: block;
+    border-radius: 5px;
+    position: relative;
 }
 
 .sobre img {
@@ -872,7 +878,7 @@ footer {
     cursor: pointer;
     background-color: #f7f7f7;
 }
-
+/*
 .footer_sociais::before {
     position: absolute;
     content: '';
@@ -880,7 +886,7 @@ footer {
     height: 7px;
     width: 250px;
     background-color: #702DFA;
-}
+}*/
 
 footer .footer_comercial {
     text-align: center;
