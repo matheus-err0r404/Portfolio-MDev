@@ -595,7 +595,7 @@ main .sobre {
 .resume_gerenico .experience_content div {
     animation: ladoSecao .5s ease-in-out forwards;
     display: none;
-    background-color: #444;
+    background-color: #282828;
     padding: 40px;
 }
 
